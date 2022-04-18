@@ -3,11 +3,42 @@ flaticon para botoes
 favicon.io -> converter qualquer img em icon
 archiveicon -> icon
 favicon.cc -> desenhar um icon
+
+.class
+#id
 */
 *{
+    padding: 0;
     margin: 0;
 }
-nav {
+nav ul {
     background-color: #161616;
-    padding: 0 20px;
+}
+nav ul li {
+    display: inline;
+    position: relative;
+}
+nav ul li a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+nav ul li a:hover {
+    background: gray;
+    color: rgb(0, 0, 0);
+}
+/* sub-menu*/
+nav ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+    width: 150px;
+}
+nav ul li:hover ul {
+    display: block;
+    position: absolute;
+}
+nav ul ul li a {
+    display: block;
 }
