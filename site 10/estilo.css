@@ -11,6 +11,9 @@ favicon.cc -> desenhar um icon
     padding: 0;
     margin: 0;
 }
+nav ul a img {
+    width: 200px;
+}
 nav ul {
     background-color: #161616;
 }
