@@ -12,31 +12,36 @@ favicon.cc -> desenhar um icon
     margin: 0;
 }
 nav ul a img {
-    width: 200px;
+    width: 170px;
+    vertical-align: middle;
 }
 nav ul {
+    text-align: center;
     background-color: #161616;
 }
 nav ul li {
     display: inline;
     position: relative;
+    width: 100px;
 }
 nav ul li a {
     color: white;
-    padding: 20px;
+    padding: 25px;
     text-decoration: none;
     display: inline-block;
+    transition: all 0.3s linear;
 }
 nav ul li a:hover {
     background: gray;
     color: rgb(0, 0, 0);
+    border: 0.1px solid white;
 }
 /* sub-menu*/
 nav ul ul {
     display: none;
     left: 0;
     position: absolute;
-    width: 150px;
+    width: 133px;
 }
 nav ul li:hover ul {
     display: block;
@@ -44,4 +49,5 @@ nav ul li:hover ul {
 }
 nav ul ul li a {
     display: block;
+    border-radius: 0.5em;
 }
