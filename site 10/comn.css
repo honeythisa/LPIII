@@ -1,24 +1,6 @@
-/*
-
-flaticon para botoes
-favicon.io -> converter qualquer img em icon
-archiveicon -> icon
-favicon.cc -> desenhar um icon
-.class
-#id
-
-*/
 *{
     padding: 0;
     margin: 0;
-}
-body {
-    background-image: url(imagens/giphy.gif);
-    display: grid;
-    grid-template-areas:
-    "esquerda conteudo direita"
-    ""
-    "";
 }
 nav ul a img {
     width: 170px;
@@ -62,4 +44,15 @@ nav ul li:hover ul {
 nav ul ul li a {
     display: block;
     border-radius: 0.6em;
+}
+
+/* comunidade */
+#conteudo {
+    font-size: 2em;
+    color: rgb(126, 126, 126);
+    margin: 15px auto;
+    padding: 1.5em;
+    background-color: rgba(255, 255, 255, 0.6);
+    max-width: 800px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
 }
