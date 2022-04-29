@@ -20,9 +20,23 @@ body {
     ""
     "";
 }
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: #161616;
+}
+::-webkit-scrollbar-thumb {
+    background-color: beige;
+    border-radius: 4px;
+}
 nav ul a img {
     width: 170px;
     vertical-align: middle;
+    border-radius: 8px;
+    box-shadow: 1px 2px 13px rgba(255, 255, 255, 0.192);
+    padding: 5px;
+    margin: 8px;
 }
 nav ul {
     text-align: center;
@@ -39,14 +53,13 @@ nav ul li a {
     padding: 25px;
     text-decoration: none;
     display: inline-block;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s linear;
     border: 0.1px solid transparent;
 }
 nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.247);
+    background: rgba(255, 255, 255, 0.301);
     color: rgb(0, 0, 0);
-    border: 0.1px solid rgb(111, 0, 255);
-    border-radius: 10em;
+    /* border: 0.1px solid rgb(255, 255, 255); rgb(111, 0, 255) roxo neon */
 }
 /* sub-menu*/
 nav ul ul {
@@ -57,9 +70,7 @@ nav ul ul {
 }
 nav ul li:hover ul {
     display: block;
-    position: absolute;
 }
 nav ul ul li a {
     display: block;
-    border-radius: 0.6em;
 }
