@@ -13,22 +13,8 @@ favicon.cc -> desenhar um icon
     margin: 0;
 }
 body {
+    font-family: Arial;
     background-image: url(imagens/giphy.gif);
-    display: grid;
-    grid-template-areas:
-    "esquerda conteudo direita"
-    ""
-    "";
-}
-::-webkit-scrollbar {
-    width: 8px;
-}
-::-webkit-scrollbar-track {
-    background-color: #161616;
-}
-::-webkit-scrollbar-thumb {
-    background-color: beige;
-    border-radius: 4px;
 }
 nav ul a img {
     width: 170px;
@@ -66,7 +52,7 @@ nav ul ul {
     display: none;
     left: 0;
     position: absolute;
-    width: 133px;
+    width: 143px;
 }
 nav ul li:hover ul {
     display: block;
