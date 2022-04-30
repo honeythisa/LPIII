@@ -3,6 +3,7 @@
     margin: 0;
 }
 body {
+    font-family: Arial;
     background-color: #5e697a65;
 }
 nav ul a img {
@@ -41,7 +42,7 @@ nav ul ul {
     display: none;
     left: 0;
     position: absolute;
-    width: 133px;
+    width: 143px;
 }
 nav ul li:hover ul {
     display: block;
