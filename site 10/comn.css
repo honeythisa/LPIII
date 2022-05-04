@@ -35,7 +35,6 @@ nav ul li a {
 nav ul li a:hover {
     background: rgba(255, 255, 255, 0.301);
     color: rgb(0, 0, 0);
-    /* border: 0.1px solid rgb(255, 255, 255); rgb(111, 0, 255) roxo neon */
 }
 /* sub-menu*/
 nav ul ul {
