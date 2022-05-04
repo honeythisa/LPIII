@@ -5,6 +5,9 @@
 body {
     font-family: Arial;
     background-color: #5e697a65;
+    background-image: url(imagens/mine4k.jpg);
+    width: 100%;
+    height: 100vh;
 }
 nav ul a img {
     width: 170px;
@@ -48,4 +51,16 @@ nav ul li:hover ul {
 }
 nav ul ul li a {
     display: block;
+}
+#formulario {
+    margin: 1em auto;
+    border:1.5px solid #161616;
+    background-color: rgba(0, 0, 0, 0.459);
+    color: aliceblue;
+    text-align: center;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 0.6em;
+    margin-top: 100px;
+    width: 400px;
+    padding: 15px;
 }
