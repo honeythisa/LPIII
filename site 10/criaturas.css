@@ -5,6 +5,7 @@
 body {
     font-family: Arial;
     background-color: #5e697a65;
+    background-image: url(imagens/criaturas.jpg);
 }
 nav ul a img {
     width: 170px;
