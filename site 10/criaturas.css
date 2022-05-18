@@ -61,3 +61,7 @@ nav ul ul li a {
     border-radius: 0.6em;
     text-align: justify;
 }
+#mobs img {
+    padding: 5px;
+    margin-left: 8em;
+}

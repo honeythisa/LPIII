@@ -49,3 +49,7 @@ nav ul li:hover ul {
 nav ul ul li a {
     display: block;
 }
+#enc iframe {
+    padding: 1.3em;
+    margin-left: 8em;
+}
