@@ -6,7 +6,7 @@
     --light: #666666;
 }
 * {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -58,7 +58,7 @@ section {
     font-size: 2.5rem;
     color: var(--black);
     cursor: pointer;
-    display: none;
+    display: inline-block;
 }
 /* Botões */
 .btn {
@@ -73,4 +73,33 @@ section {
 
 .btn:hover {
     background-color: var(--black);
+}
+
+.home-bg .home {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+    padding-top: 5em;
+}
+
+.home-bg img {
+    width: 100%;
+}
+
+.home-bg .home .content {
+    width: 50rem;
+    text-align: justify;
+    padding: 2em;
+    margin: 5em;
+}
+.home-bg .home .content h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.home-bg .home .content p {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: 2; /* altura da linha */
 }
