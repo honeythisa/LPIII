@@ -12,6 +12,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body {
+    background-color: rgb(245, 235, 169);
+}
 html {
     font-size: 62.5%;
 }
@@ -64,23 +67,21 @@ section {
     color: var(--white);
     font-size: 1.8rem;
     padding: 1rem 3rem; /* Vertical Horizontal */
+    flex-wrap: wrap;
 }
 .btn:hover {
     background-color: var(--black);
 }
-
 .home-bg .home {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 1em;
-    padding-top: 5em;
+    min-height: 70rem;
+    display: flex;
+    align-items: center; /* Vertical */
 }
 .home-bg img {
     width: 100%;
 }
 .home-bg .home .content {
     width: 50rem;
-    text-align: justify;
     padding: 2em;
     margin: 5em;
 }
@@ -115,8 +116,7 @@ hr {
 .facility .heading h3 {
     font-size: 2rem;
     color: var(--black);
-    margin: 1rem 0rem;
-
+    padding-bottom: 3rem;
     text-align: center;
 }
 .facility .box-container .box h3 {
