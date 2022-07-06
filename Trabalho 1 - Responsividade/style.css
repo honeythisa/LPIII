@@ -99,7 +99,9 @@ section {
 hr {
     border-top: 1px dashed rgb(253, 231, 104);
 }
-
+.facility {
+    background-color: rgb(250, 222, 132);
+}
 .facility .box-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -116,7 +118,13 @@ hr {
 .facility .heading h3 {
     font-size: 2rem;
     color: var(--black);
-    padding-bottom: 3rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+.facility .heading p {
+    font-size: 1.7rem;
+    color: var(--light);
+    padding: 4rem;
     text-align: center;
 }
 .facility .box-container .box h3 {
@@ -125,7 +133,233 @@ hr {
     margin: 1rem 0;
 }
 .facility .box-container .box p {
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.newAct .box-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5rem;
+    align-items: flex-start; /* alinhar no topo */
+}
+.newAct .heading h3 {
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.newAct .heading p {
+    font-size: 1.7rem;
+    color: var(--light);
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.newAct .box-container .box {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.newAct .box-container .box img {
+    width: 50rem;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+}
+
+.newAct .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem;
+}
+
+.newAct .box-container .box p {
     font-size: 1.5em;
     color: var(--light);
-    line-height: 1.8;
+    line-height: 2;
+}
+
+.community {
+    display: flex;
+    align-items: center;
+    background-color: rgb(250, 222, 132);
+    max-width: 1200px;
+}
+
+.community .content {
+    width: 50rem;
+    text-align: center;
+}
+
+.community .content h3 {
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.community .content p {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: 2; 
+}
+
+.community img {
+    width: 55rem;
+    max-width:100%;
+}
+
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.5rem;
+    align-items: flex-start; /* alinhar no topo */
+}
+.menu .heading h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 3rem;
+    text-align: left;
+
+}
+.menu .heading p {
+    font-size: 1.7rem;
+    color: var(--light);
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.menu .box-container .box {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.menu .box-container .box img {
+    width: 30rem;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+}
+
+.menu .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem;
+}
+
+.menu .box-container .box p {
+    font-size: 1.5em;
+    color: var(--light);
+    line-height: 2;
+}
+
+
+.newsletter {
+    min-height: 30rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(250, 222, 132);
+}
+
+.newsletter input {
+    width: 45rem;
+    height: 5rem;
+}
+
+.newsletter .heading {
+    text-align: left;
+    margin: 5rem;
+}
+
+.newsletter .heading p {
+    text-align: left;
+    padding: 1rem;
+    color: var(--light);
+}
+
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .facility .box-container {
+        grid-template-columns: auto auto;
+    }
+
+    .menu .box-container {
+        grid-template-columns: auto auto;
+    }
+
+    .gallery .box-container {
+        grid-template-columns: auto auto;
+    }
+
+    .community .box-container {
+        grid-template-columns: auto auto;
+    }
+
+    .footer .box-container {
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width: 700px) {
+
+    /* Menu */
+    /* Mostro o botaozinho de menu */
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    /* mudar o jeito de exibir os itens do menu */
+
+    .header .flex .navbar.active {
+        display: block;
+    }
+    
+    .home .content {
+        grid-template-columns: auto auto;
+    }
+
+    .menu .box-container {
+        grid-template-columns: auto auto;
+    }
+
+    .home-bg {
+        background-position: left;
+    }
+
+    .home-bg .home {
+        justify-content: center;
+    }
+
+    .home-bg .home .content h3 {
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading img{
+        height: 3rem;
+    }
+
+    .heading h3{
+        font-size: 3rem;
+    }
+
+    .facility .box-container {
+        grid-template-columns: auto;
+    }
+
+    .menu .box-container {
+        grid-template-columns: auto;
+    }
+
 }
